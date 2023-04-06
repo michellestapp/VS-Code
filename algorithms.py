@@ -4,22 +4,22 @@
 # Leave a comment above the function stating the time complexity.
 # Send a screenshot of your solution and time complexity comment to your personal instructors chat.
 
-# TIME COMPLEXITY =>  O(1)
+# # TIME COMPLEXITY =>  O(1)
 
-def is_even(user_number):
+# def is_even(user_number):
     
-    e_or_o = user_number%2
+#     e_or_o = user_number%2
 
-    if e_or_o == 0:
-        return True
-    else:
-        return False
+#     if e_or_o == 0:
+#         return True
+#     else:
+#         return False
 
-user_number = int(input(" \n Enter a number to find if it's even: \n"))
-if is_even(user_number):
-    print(f' The number {user_number} is EVEN!\n')
-else:
-    print(f' The number {user_number} is ODD\n')
+# user_number = int(input(" \n Enter a number to find if it's even: \n"))
+# if is_even(user_number):
+#     print(f' The number {user_number} is EVEN!\n')
+# else:
+#     print(f' The number {user_number} is ODD\n')
 
 
 # Task 2: Less than 100
@@ -28,4 +28,20 @@ else:
 # Leave a comment above the function stating the time complexity.
 # Send a screenshot of your solution and time complexity comment to your personal instructors chat.
 
-# 
+# TIME COMPLEXITY =>  O(1) 
+
+def less_than_100(list):
+    all_lt100 = True
+    for num in list :
+        if num >= 100:
+           all_lt100 = False
+           break
+    return all_lt100
+my_list = [10,54, 57, 75, 2]
+
+if less_than_100(my_list) == True:
+    print('\n All numbers under 100\n')
+else:
+    print('\n You have at least one number that is greater than or equal to 100\n')
+
+
